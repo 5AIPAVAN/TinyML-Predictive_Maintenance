@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Failure</title>
+</head>
+<body>
+    <h2>Enter Details to Predict Failure</h2>
+    <form action="/predict" method="post">
+        <label for="air_temperature">Air Temperature (K):</label><br>
+        <input type="text" id="air_temperature" name="air_temperature"><br>
+        
+        <label for="process_temperature">Process Temperature (K):</label><br>
+        <input type="text" id="process_temperature" name="process_temperature"><br>
+        
+        <label for="rotational_speed">Rotational Speed (rpm):</label><br>
+        <input type="text" id="rotational_speed" name="rotational_speed"><br>
+        
+        <label for="torque">Torque (Nm):</label><br>
+        <input type="text" id="torque" name="torque"><br>
+        
+        <label for="tool_wear">Tool Wear (min):</label><br>
+        <input type="text" id="tool_wear" name="tool_wear"><br>
+        
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
